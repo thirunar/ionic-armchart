@@ -6,5 +6,6 @@
     "armchart": "amcharts/amcharts3",
     "underscore": "underscore#1.8.3",
     "jsonpath": "dchester/jsonpath",
+    "jQuery": "jQuery#2.2.1"
   }
 }
