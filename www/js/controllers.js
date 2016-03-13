@@ -1,13 +1,7 @@
-angular.module('starter.controllers', [])
+app.controller('DashCtrl', function ($scope, Chart, GraphMapperService) {
+  $scope.chartType = "pie";
 
-    .controller('DashCtrl', function ($scope, Chart) {
-        $scope.chart = AmCharts.makeChart("chartdiv", {
-            "type": "pie",
-            "theme": "none",
-            "dataProvider": Chart.all(),
-            "valueField": "litres",
-            "titleField": "country",
-            "labelRadius": 4,
-            "labelText": "[[percents]]%"
-        })
-    });
+  $scope.getGraph = function getGraph() {
+    GraphMapperService.getGraphFor(Chart.all(), $scope.chartType.toLowerCase());
+  };
+});

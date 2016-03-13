@@ -1,8 +1,8 @@
 /* Empty. Add your own CSS if you like */
 #chartwrapper {
     position: relative;
-    width		: 200px;
-    height		: 200px;
+    width		: 1200px;
+    height		: 500px;
     background: #fff;
     /*border: 1px dotted #c00;*/
     -webkit-box-sizing: border-box;
@@ -11,10 +11,10 @@
 }
 #chartdiv {
     position: absolute;
-    top: -30px;
-    left: -30px;
-    width		: 260px;
-    height		: 260px;
+    top: 10px;
+    left: 10px;
+    width		: 1000px;
+    height		: 500px;
     /*border: 1px dotted #0c0;*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

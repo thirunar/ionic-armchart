@@ -1,7 +1,18 @@
 <ion-view view-title="Dashboard">
-    <ion-content class="padding">
-        <div id="chartwrapper">
-            <div id="chartdiv"></div>
-        </div>
-    </ion-content>
+  <ion-content class="padding" ng-controller="DashCtrl">
+
+   <div class="list">
+      <label class="item item-input item-select">
+          Choose Graph
+        <select ng-model="chartType" ng-change="getGraph()">
+          <option selected>Pie</option>
+          <option selected>Serial</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="chartwrapper">
+      <div id="chartdiv"></div>
+    </div>
+  </ion-content>
 </ion-view>
